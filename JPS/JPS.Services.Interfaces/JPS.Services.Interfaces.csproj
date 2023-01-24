@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SendGrid" Version="9.14.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JPS.Common\JPS.Common.csproj" />
+    <ProjectReference Include="..\JPS.Services.DTO\JPS.Services.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

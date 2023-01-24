@@ -1,0 +1,16 @@
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/bin/Debug/netcoreapp3.1/JPS.Infrastructure.deps.json
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/bin/Debug/netcoreapp3.1/JPS.Infrastructure.runtimeconfig.json
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/bin/Debug/netcoreapp3.1/JPS.Infrastructure.runtimeconfig.dev.json
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/bin/Debug/netcoreapp3.1/JPS.Infrastructure.dll
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/bin/Debug/netcoreapp3.1/JPS.Infrastructure.pdb
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/bin/Debug/netcoreapp3.1/JPS.Domain.Entities.dll
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/bin/Debug/netcoreapp3.1/JPS.Domain.Entities.pdb
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.csproj.AssemblyReference.cache
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.AssemblyInfoInputs.cache
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.AssemblyInfo.cs
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.csproj.CopyComplete
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.dll
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.pdb
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.Infrastructure/obj/Debug/netcoreapp3.1/JPS.Infrastructure.genruntimeconfig.cache

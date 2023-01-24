@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0118f1b5-93d1-4ee1-a04a-0991297659a3": {
+      "ProjectGuid": "0118f1b5-93d1-4ee1-a04a-0991297659a3",
+      "DisplayName": "JPS.API",
+      "ColorIndex": 0
+    },
+    "92ad428b-19db-45d3-a135-7577d17106a0": {
+      "ProjectGuid": "92ad428b-19db-45d3-a135-7577d17106a0",
+      "DisplayName": "JPS.API.IoC",
+      "ColorIndex": 1
+    },
+    "6da8ba59-ba63-4b07-83c0-fb9d8c5a47b6": {
+      "ProjectGuid": "6da8ba59-ba63-4b07-83c0-fb9d8c5a47b6",
+      "DisplayName": "JPS.Services.Tests",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Slh+Yzlq0C7lB9UG7mLKN90HJ5C5Oe79JGXqqtxu5jrnQMANHI0PPyP2jJkfgKqTjs7UZg1HDDR803AvIJBLsA==",
+  "success": true,
+  "projectFilePath": "/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/JPS.API.ViewModels.csproj",
+  "expectedPackageFiles": [
+    "/Users/jsp/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/jsp/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

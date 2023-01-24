@@ -1,0 +1,587 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JPS.API</name>
+    </assembly>
+    <members>
+        <member name="T:JPS.API.Areas.Analysis.Controllers.AnalyticsController">
+            <summary>
+            This controller allow to work with analytics.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.Analysis.Controllers.AnalyticsController.GetGroupedAnswers(System.Int32)">
+            <summary>
+            Gets grouped answers by question id.
+            </summary>
+            <param name="questionId">Used to find necessary answers.</param>
+            <returns>Grouped collection of answers.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Analysis.Controllers.AnalyticsController.GetPollAnalyticsAsync(System.Int32)">
+            <summary>
+            Gets poll analytics by poll id.
+            </summary>
+            <param name="pollId">Used to find necessary poll.</param>
+            <returns>Grouped collection of answers.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Analysis.Controllers.AnalyticsController.GetPollsComparison(System.Int32,System.Int32)">
+            <summary>
+            Gets model with two analytics poll models and their grouped questions.
+            </summary>
+            <param name="firstPollId">Used to find first poll.</param>
+            <param name="secondPollId">Used to find second poll.</param>
+            <returns>Model with two analytics poll models with grouped questions.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Analysis.Controllers.AnalyticsController.GetPercentOfUsersAnsweredThePoll(System.Int32)">
+            <summary>
+            Gets percent of users that answered the specific poll.
+            </summary>
+            <param name="pollId">Used to find necessary poll.</param>
+            <returns>Percent of users.</returns>
+        </member>
+        <member name="T:JPS.API.Areas.Analysis.Controllers.StatisticsController">
+            <summary>
+            This controller allow to work with statistics.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.Analysis.Controllers.StatisticsController.GetUsersAnswersByPollIdAsync(System.Int32)">
+            <summary>
+            Gets all answers grouped by questions in poll.
+            </summary>
+            <param name="pollId">Used to find necessary poll.</param>
+            <returns>Poll with answers grouped by questions.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Analysis.Controllers.StatisticsController.GetUsersAnswersByPollIdAsync(System.Int32,System.String)">
+            <summary>
+            Gets all answers of user for poll.
+            </summary>
+            <param name="pollId">Used to find necessary poll.</param>
+            <param name="userId">Used to find necessary answers.</param>
+            <returns>Poll with user's answers.</returns>
+        </member>
+        <member name="T:JPS.API.Areas.Personal.Controllers.AnswersController">
+            <summary>
+            This controller allows create, update and get all types of answers.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.Personal.Controllers.AnswersController.GetAnswersByQuestionIdAsync(System.Int32)">
+            <summary>
+            Gets all answers by question id.
+            </summary>
+            <param name="questionId">Used to find necessary answers.</param>
+            <returns>Collection of answers.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Personal.Controllers.AnswersController.CreateAnswersForPollAsync(JPS.API.ViewModels.ViewModels.AnswerViewModels.UpdateAllAnswersInPollViewModel.CreatePollAnswersViewModel)">
+            <summary>
+            Creates answers in poll.
+            </summary>
+            <param name="allAnswersInPoll">ViewModel with fields necessary for creating new answer.</param>
+            <returns>Created answers</returns>
+        </member>
+        <member name="T:JPS.API.Areas.PollManagement.Controllers.CategoriesController">
+            <summary>
+            This controller allows create, update and get categories.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.CategoriesController.GetCategoriesTreeAndPollsWithoutCategory">
+            <summary>
+            Gets all existing categories as a tree and polls without category.
+            </summary>
+            <returns>Object with categories tree and collection of polls without category.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.CategoriesController.GetCategoryByIdAsync(System.Int32)">
+            <summary>
+            Gets category by id.
+            </summary>
+            <param name="id">Used to find necessary category.</param>
+            <returns>Category.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.CategoriesController.CreateAsync(JPS.API.ViewModels.ViewModels.CategoryViewModels.CreateCategoryViewModel)">
+            <summary>
+            Creates a new category.
+            </summary>
+            <param name="categoryViewModel">Model with fields necessary for creating new category.</param>
+            <returns>Created category.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.CategoriesController.UpdateParentAsync(JPS.API.ViewModels.ViewModels.CategoryViewModels.UpdateViewModels.UpdateCategoryParentViewModel,System.Int32)">
+            <summary>
+            Updates category's parent by id.
+            </summary>
+            <param name="categoryViewModel">Model with fields to be updated.</param>
+            <param name="id">Used to find necessary category.</param>
+            <returns>Updated category.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.CategoriesController.UpdateTitleAsync(JPS.API.ViewModels.ViewModels.CategoryViewModels.UpdateViewModels.UpdateCategoryTitleViewModel,System.Int32)">
+            <summary>
+            Updates category's title by id.
+            </summary>
+            <param name="categoryViewModel">Model with fields to be updated.</param>
+            <param name="id">Used to find necessary category.</param>
+            <returns>Updated category.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.CategoriesController.DeleteCategoryAsync(System.Int32)">
+            <summary>
+            Deletes a category.
+            </summary>
+            <param name="id">Used to find necessary category.</param>
+        </member>
+        <member name="T:JPS.API.Areas.PollManagement.Controllers.OptionRowsController">
+            <summary>
+            This controller allows create and update  rows.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionRowsController.CreateOptionRowAsync(JPS.API.ViewModels.ViewModels.OptionRowViewModels.CreateOptionRowViewModel)">
+            <summary>
+            Creates new row.
+            </summary>
+            <param name="createOptionRowViewModel">Model with fields necessary for creating new category.</param>
+            <returns>Created category.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionRowsController.UpdateOptionRowTextAsync(JPS.API.ViewModels.ViewModels.OptionRowViewModels.UpdateViewModels.UpdateOptionRowTextViewModel,System.Int32)">
+            <summary>
+            Updates rows's text by id.
+            </summary>
+            <param name="updateOptionRowTextViewModel">Model with fields to be updated.</param>
+            <param name="id">Used to find necessary row.</param>
+            <returns>Updated row.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionRowsController.UpdateOptionRowImageAsync(JPS.API.ViewModels.ViewModels.OptionRowViewModels.UpdateViewModels.UpdateOptionRowImageViewModel,System.Int32)">
+            <summary>
+            Updates rows's image by id.
+            </summary>
+            <param name="updateOptionRowImageViewModel">Model with fields to be updated.</param>
+            <param name="id">Used to find necessary row.</param>
+            <returns>Updated row.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionRowsController.UpdateOptionRowsOrderAsync(System.Collections.Generic.IEnumerable{JPS.API.ViewModels.ViewModels.OptionRowViewModels.UpdateViewModels.UpdateOptionRowOrderViewModel})">
+            <summary>
+            Updates all rows order in one question.
+            </summary>
+            <param name="updateOptionRowOrderViewModels">Model with fields to be updated.</param>
+            <returns>Updated rows.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionRowsController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a row by id.
+            </summary>
+            <param name="id">Used to find necessary row.</param>
+        </member>
+        <member name="T:JPS.API.Areas.PollManagement.Controllers.OptionsController">
+            <summary>
+            OptionsController provides methods that respond to HTTP requests related to working with options.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionsController.CreateOptionAsync(JPS.API.ViewModels.ViewModels.OptionViewModels.CreateOptionViewModel)">
+            <summary>
+            Creates option.
+            </summary>
+            <param name="optionViewModel">Option model.</param>
+            <returns>Created option.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionsController.UpdateOptionTextAsync(System.Int32,JPS.API.ViewModels.ViewModels.OptionViewModels.UpdateViewModels.UpdateOptionTextViewModel)">
+            <summary>
+            Updates option text.
+            </summary>
+            <param name="id">Used to find option to be updated.</param>
+            <param name="optionTextViewModel">Model with fields necessary for updating option.</param>
+            <returns>Updated option.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionsController.UpdateOptionImageAsync(System.Int32,JPS.API.ViewModels.ViewModels.OptionViewModels.UpdateViewModels.UpdateOptionImageViewModel)">
+            <summary>
+            Updates option image.
+            </summary>
+            <param name="id">Used to find option to be updated.</param>
+            <param name="optionImageViewModel">Model with fields necessary for updating option.</param>
+            <returns>Updated option.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionsController.UpdateOptionsOrderAsync(System.Collections.Generic.IEnumerable{JPS.API.ViewModels.ViewModels.OptionViewModels.UpdateViewModels.UpdateOptionOrderViewModel})">
+            <summary>
+            Updates all options order in one question.
+            </summary>
+            <param name="optionsOrderViewModel">Collection of models with fields necessary for updating options.</param>
+            <returns>Updated options.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionsController.UpdateOptionValueAsync(System.Int32,JPS.API.ViewModels.ViewModels.OptionViewModels.UpdateViewModels.UpdateOptionValueViewModel)">
+            <summary>
+            Updates option value.
+            </summary>
+            <param name="id">Used to find option to be updated.</param>
+            <param name="optionValueViewModel">Model with fields necessary for updating option.</param>
+            <returns>Updated option.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.OptionsController.DeleteOptionAsync(System.Int32)">
+            <summary>
+            Deletes option.
+            </summary>
+            <param name="id">Used to find option to be deleted.</param>
+        </member>
+        <member name="T:JPS.API.Areas.PollManagement.Controllers.PollsController">
+            <summary>
+            This controller allows get, create, update and delete polls.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.GetAllPollsAsync(JPS.Services.Services._Utils.PaginationQuery,System.Nullable{System.Int32})">
+            <summary>
+            Gets polls in the form of tree using pagination. Polls could be filtered by categoryId.
+            </summary>
+            <param name="paginationQuery">Used to set pagination properties.</param>
+            <param name="categoryId">Used to get polls of concrete category.
+            More than 0 - get polls that belong to category with setted id.
+            0 - get all polls.
+            null - get polls that don't belong to any category.</param>
+            <returns>Paged list of polls with contained sections questions and options.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.GetPollByIdAsync(System.Int32)">
+            <summary>
+            Gets poll with sections, questions and options by poll id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <return>Poll with contained sections questions and options.</return>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.CreatePollAsync(JPS.API.ViewModels.ViewModels.PollViewModels.CreatePollViewModel)">
+            <summary>
+            Creates new poll.
+            </summary>
+            <param name="createPollViewModel">Model with fields necessary for creating new poll.</param>
+            <returns>Created poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.CopyPollAsync(System.Int32)">
+            <summary>
+            Creates poll as a copy of existing poll.
+            </summary>
+            <param name="id">Id of poll to be copied.</param>
+            <returns>Created poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.PublishPollAsync(System.Int32)">
+            <summary>
+            Validate poll and publish it.
+            </summary>
+            <param name="id">Identifier for the poll to be published.</param>
+            <returns>Published poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.UpdatePollCategoryIdAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollViewModels.UpdateViewModels.UpdatePollCategoryIdViewModel)">
+            <summary>
+            Updates poll category by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="pollCategoryId">Model with fields to be updated.</param>
+            <returns>Updated poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.UpdatePollTitleAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollViewModels.UpdateViewModels.UpdatePollTitleViewModel)">
+            <summary>
+            Updates poll title by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="pollTitle">Model with fields to be updated.</param>
+            <returns>Updated poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.UpdatePollDescriptionAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollViewModels.UpdateViewModels.UpdatePollDescriptionViewModel)">
+            <summary>
+            Updates poll description by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="pollDescription">Model with fields to be updated.</param>
+            <returns>Updated poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.UpdatePollStartDateAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollViewModels.UpdateViewModels.UpdatePollStartDateViewModel)">
+            <summary>
+            Updates poll start date by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="pollStartDate">Model with fields to be updated.</param>
+            <returns>Updated poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.UpdateFinishDateAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollViewModels.UpdatePollFinishDateViewModel)">
+            <summary>
+            Updates poll finish date by id. 
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="pollFinishDate">Model with fields to be updated.</param>
+            <returns>Updated poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.UpdateIsAnonymousStatusAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollViewModels.UpdatePollIsAnonymousViewModel)">
+            <summary>
+            Updates poll isAnonymous status by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="pollIsAnonymous">Model with fields to be updated.</param>
+            <returns>Updated poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollsController.DeletePollAsync(System.Int32)">
+            <summary>
+            Deletes poll by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+        </member>
+        <member name="T:JPS.API.Areas.PollManagement.Controllers.PollStylesController">
+            <summary>
+            This controller allows update poll styles.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollStylesController.UpdatePollFontAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollStyleViewModels.UpdatePollStyleViewModels.UpdatePollFontViewModel)">
+            <summary>
+            Updates poll font by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="pollFontViewModel">Model with fields to be updated.</param>
+            <returns>Updated poll style.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollStylesController.UpdatePollThemeColorAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollStyleViewModels.UpdatePollStyleViewModels.UpdatePollThemeColorViewModel)">
+            <summary>
+            Updates poll theme color by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="themeColorViewModel">Model with fields to be updated.</param>
+            <returns>Updated poll style.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollStylesController.UpdatePollOpacityAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollStyleViewModels.UpdatePollStyleViewModels.UpdatePollOpacityViewModel)">
+            <summary>
+            Updates poll opacity by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="opacityViewModel">Model with fields to be updated.</param>
+            <returns>Updated poll style.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollStylesController.UpdatePollImageAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollStyleViewModels.UpdatePollStyleViewModels.UpdatePollImageViewModel)">
+            <summary>
+            Updates poll image url by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="imageViewModel">Model with fields to be updated.</param>
+            <returns>Updated poll style.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.PollStylesController.UpdatePollImageCoordinatesAsync(System.Int32,JPS.API.ViewModels.ViewModels.PollStyleViewModels.UpdatePollStyleViewModels.UpdatePollImageCoordinatesViewModel)">
+            <summary>
+            Updates poll image coordinates by id.
+            </summary>
+            <param name="id">Used to find necessary poll.</param>
+            <param name="imageCoordinatesViewModel">Model with fields to be updated.</param>
+            <returns>Updated poll style.</returns>
+        </member>
+        <member name="T:JPS.API.Areas.PollManagement.Controllers.QuestionsController">
+            <summary>
+            QuestionsController provides methods that respond to HTTP requests related to working with questions.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.GetAllQuestionsByPollIdAsync(System.Int32)">
+            <summary>
+            Gets all questions that belong to the poll with given id.
+            </summary>
+            <param name="pollId">Used to find the needed poll.</param>
+            <returns>Questions that belong to the poll.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.CreateQuestionAsync(JPS.API.ViewModels.ViewModels.QuestionViewModels.CreateQuestionViewModel)">
+            <summary>
+            Creates question.
+            </summary>
+            <param name="questionModel">Model with fields to be created.</param>
+            <returns>Created question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.CopyQuestionAsync(System.Int32)">
+            <summary>
+            Creates question as a copy of existing question.
+            </summary>
+            <param name="id">Id of the question to be copied.</param>
+            <returns>Created question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionTextAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionTextViewModel)">
+            <summary>
+            Updates question text.
+            </summary>
+            <param name="id">Used to find question to be updated.</param>
+            <param name="questionTextModel">Model with fields to be updated.</param>
+            <returns>Updated question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionIsRequiredAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionIsRequiredViewModel)">
+            <summary>
+            Updates question isRequired status.
+            </summary>
+            <param name="id">Used to find question to be updated.</param>
+            <param name="questionIsRequiredModel">Model with fields to be updated.</param>
+            <returns>Updated question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionCanHaveOtherOptiondAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionCanHaveOtherOptionViewModel)">
+            <summary>
+            Updates question CanHaveOtherOption status.
+            </summary>
+            <param name="id">Used to find question to be updated.</param>
+            <param name="questionCanHaveOtherOptionModel">Model with fields to be updated.</param>
+            <returns>Updated question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionCommentAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionCommentViewModel)">
+            <summary>
+            Updates question comment.
+            </summary>
+            <param name="id">Used to find question to be updated.</param>
+            <param name="questionCommentModel">Model with fields to be updated.</param>
+            <returns>Updated question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionsOrderAsync(System.Collections.Generic.IEnumerable{JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionOrderViewModel})">
+            <summary>
+            Updates the order and sections for all questions in one poll.
+            </summary>
+            <param name="questionsOrderModel">Model with fields to be updated.</param>
+            <returns>Updated questions.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionTypeIdAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionTypeIdViewModel)">
+            <summary>
+            Updates question type id.
+            </summary>
+            <param name="id">Used to find question to be updated.</param>
+            <param name="questionTypeIdModel">Model with fields to be updated.</param>
+            <returns>Updated question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionImageUrlAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionImageUrlViewModel)">
+            <summary>
+            Updates question image.
+            </summary>
+            <param name="id">Used to find question to be updated.</param>
+            <param name="questionImageUrlModel">Model with fields to be updated.</param>
+            <returns>Updated question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.UpdateQuestionVideoUrlAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionViewModels.UpdateViewModels.UpdateQuestionVideoUrlViewModel)">
+            <summary>
+            Updates question video.
+            </summary>
+            <param name="id">Used to find question to be updated.</param>
+            <param name="questionVideoUrlModel">Model with fields to be updated.</param>
+            <returns>Updated question.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionsController.DeleteQuestionAsync(System.Int32)">
+            <summary>
+            Deletes question.
+            </summary>
+            <param name="id">Used to find question to be deleted.</param>
+        </member>
+        <member name="T:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController">
+            <summary>
+            QuestionSectionsController provides methods that respond 
+            to HTTP requests related to working with question sections.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController.GetAllSectionsInPollAsync(System.Int32)">
+            <summary>
+            Gets all sections by poll id.
+            </summary>
+            <param name="pollId">Used to find necessary sections.</param>
+            <returns>Collection of sections.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController.GetAllSectionsWithQuestionsByPollIdAsync(System.Int32)">
+            <summary>
+            Gets all sections with questions by poll id.
+            </summary>
+            <param name="pollId">Used to find necessary sections.</param>
+            <returns>Collection of sections with questions.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController.CreateQuestionSectionAsync(JPS.API.ViewModels.ViewModels.QuestionSectionViewModels.CreateQuestionSectionViewModel)">
+            <summary>
+            Creates section.
+            </summary>
+            <param name="questionSection">ViewModel with fields necessary for creating new section.</param>
+            <returns>Created section.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController.UpdateQuestionSectionTitleAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionSectionViewModels.UpdateViewModels.UpdateQuestionSectionTitleViewModel)">
+            <summary>
+            Updates section title.
+            </summary>
+            <param name="sectionId">Used to find necessary section.</param>
+            <param name="questionSectionTitle">ViewModel with fields necessary for update section title.</param>
+            <returns>Updated section.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController.UpdateQuestionSectionDescriptionAsync(System.Int32,JPS.API.ViewModels.ViewModels.QuestionSectionViewModels.UpdateViewModels.UpdateQuestionSectionDescriptionViewModel)">
+            <summary>
+            Updates section description.
+            </summary>
+            <param name="sectionId">Used to find necessary section.</param>
+            <param name="questionSectionDescription">ViewModel with fields necessary for update section description.</param>
+            <returns>Updated section.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController.UpdateQuestionSectionsOrderAsync(System.Collections.Generic.IEnumerable{JPS.API.ViewModels.ViewModels.QuestionSectionViewModels.UpdateViewModels.UpdateQuestionSectionOrderViewModel})">
+            <summary>
+            Updates all sections order in one poll.
+            </summary>
+            <param name="questionSectionsOrder">ViewModel with fields necessary for update sections orders.</param>
+            <returns>Updated sections.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.PollManagement.Controllers.QuestionSectionsController.DeleteQuestionSectionAsync(System.Int32)">
+            <summary>
+            Deletes section.
+            </summary>
+            <param name="sectionId">Used to find necessary section.</param>
+        </member>
+        <member name="T:JPS.API.Areas.Utils.Controllers.UtilsController">
+            <summary>
+            This controller contains additional methods.
+            Allows to create polls with question sections and questions of all possible types.
+            Allows to get user's name.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.CreatePollAsync(JPS.API.ViewModels.ViewModels.CreatePollWithAllQuestionsViewModels.CreatePollWithQuestionSectionsViewModel)">
+            <summary>
+            Creates poll with all questions.
+            </summary>
+            <param name="createPollViewModel">Model with fields to be created.</param>
+            <returns>Action result.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.DeleteUserAnswersAsync(System.String,System.Int32)">
+            <summary>
+            Deletes all user's answers to the poll.
+            </summary>
+            <param name="userId">Used to find necessary user.</param>
+            <param name="pollId">Used to find necessary poll.</param>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.GetLoggedInUserName">
+            <summary>
+            Gets name of logged-in user.
+            </summary>
+            <returns>User's name.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.GetNumberOfUsersAsync">
+            <summary>
+            Gets number of users.
+            </summary>
+            <returns>Number of users.</returns>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.NotifyUserAboutStartPollingAsync(System.Int32,System.String)">
+            <summary>
+            Send mail about poll start on appropriate email address.
+            </summary>
+            <param name="email">Used to send mail to appropriate email address.</param>
+            <param name="pollId">Used to get information about neccessary poll.</param>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.NotifyUserAboutStartPollingAsync(System.Int32)">
+            <summary>
+            Send mail about poll start to all users.
+            </summary>
+            <param name="pollId">Used to get information about necessary poll.</param>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.NotifyUserAboutPollEndAsync(System.Int32,System.String)">
+            <summary>
+            Send mail that poll has ended on appropriate email address.
+            </summary>
+            <param name="email">Used to send mail to appropriate email address.</param>
+            <param name="pollId">Used to get information about necessary poll.</param>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.NotifyUserAboutPollEndAsync(System.Int32)">
+            <summary>
+            Send mail to all users that poll has ended.
+            </summary>
+            <param name="pollId">Used to get information about necessary poll.</param>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.RemindUserPollIsInProgressAsync(System.Int32,System.String)">
+            <summary>
+            Send remind mail to user  that poll is in progress.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.RemindPollIsInProgressAsync(System.Int32)">
+            <summary>
+            Send remind mail to users that poll is in progress.
+            </summary>
+        </member>
+        <member name="M:JPS.API.Areas.Utils.Controllers.UtilsController.GetSasToken">
+            <summary>
+            Generates SAS-token for blob storage access.
+            </summary>
+            <returns>SAS token.</returns>
+        </member>
+    </members>
+</doc>

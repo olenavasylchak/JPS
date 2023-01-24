@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = JPS.API.ViewModels.Tests
+build_property.ProjectDir = /Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels.Tests/

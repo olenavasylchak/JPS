@@ -1,0 +1,13 @@
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/bin/Debug/netcoreapp3.1/JPS.API.ViewModels.deps.json
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/bin/Debug/netcoreapp3.1/JPS.API.ViewModels.dll
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/bin/Debug/netcoreapp3.1/JPS.API.ViewModels.pdb
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/bin/Debug/netcoreapp3.1/JPS.Common.dll
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/bin/Debug/netcoreapp3.1/JPS.Common.pdb
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.csproj.AssemblyReference.cache
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.AssemblyInfoInputs.cache
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.AssemblyInfo.cs
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.csproj.CoreCompileInputs.cache
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.csproj.CopyComplete
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.dll
+/Users/jsp/Downloads/Telegram Desktop/JPS/JPS.API.ViewModels/obj/Debug/netcoreapp3.1/JPS.API.ViewModels.pdb

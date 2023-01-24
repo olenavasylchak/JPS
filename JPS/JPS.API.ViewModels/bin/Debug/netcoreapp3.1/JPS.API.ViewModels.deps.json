@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "JPS.API.ViewModels/1.0.0": {
+        "dependencies": {
+          "JPS.Common": "1.0.0"
+        },
+        "runtime": {
+          "JPS.API.ViewModels.dll": {}
+        }
+      },
+      "JPS.Common/1.0.0": {
+        "runtime": {
+          "JPS.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JPS.API.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JPS.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

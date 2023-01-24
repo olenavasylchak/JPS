@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{0118F1B5-93D1-4EE1-A04A-0991297659A3}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.JPS.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="JPS.Domain.Entities/Entities/OptionRowEntity.cs">
+    <Files>
+      <File FileName="JPS.API.IoC/MapperProfile/APIMapperProfile.cs" />
+      <File FileName="JPS.API.IoC/MapperProfile/DomainMapperProfile.cs" Line="1" Column="1" />
+      <File FileName="JPS.API.IoC/MapperProfile/ServicesMapperProfile.cs" />
+      <File FileName="JPS.Services.DTO/DTOs/OptionDTOs/CreateOptionDTO.cs" Line="15" Column="1" />
+      <File FileName="JPS.Domain.Entities/Entities/OptionEntity.cs" />
+      <File FileName="JPS.Domain.Entities/Entities/AnswerEntity.cs" Line="1" Column="1" />
+      <File FileName="JPS.API/Areas/PollManagement/Controllers/OptionsController.cs" />
+      <File FileName="JPS.Services.DTO/DTOs/OptionDTOs/OptionDTO.cs" Line="1" Column="1" />
+      <File FileName="JPS.Services.DTO/DTOs/AnswerDTOs/CreateDTOs/CreateDateAnswerDTO.cs" Line="1" Column="1" />
+      <File FileName="JPS.Services.DTO/DTOs/AnswerDTOs/CreateDTOs/CreateParagraphAnswerDTO.cs" Line="1" Column="1" />
+      <File FileName="JPS.Domain.Entities/Entities/CategoryEntity.cs" Line="1" Column="1" />
+      <File FileName="JPS.Domain.Entities/Entities/OptionRowEntity.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JPS" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

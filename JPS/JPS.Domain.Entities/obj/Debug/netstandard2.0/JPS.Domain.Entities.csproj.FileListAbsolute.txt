@@ -1,0 +1,9 @@
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\bin\Debug\netstandard2.0\JPS.Domain.Entities.deps.json
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\bin\Debug\netstandard2.0\JPS.Domain.Entities.dll
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\bin\Debug\netstandard2.0\JPS.Domain.Entities.pdb
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\obj\Debug\netstandard2.0\JPS.Domain.Entities.csprojAssemblyReference.cache
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\obj\Debug\netstandard2.0\JPS.Domain.Entities.csproj.CoreCompileInputs.cache
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\obj\Debug\netstandard2.0\JPS.Domain.Entities.AssemblyInfoInputs.cache
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\obj\Debug\netstandard2.0\JPS.Domain.Entities.AssemblyInfo.cs
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\obj\Debug\netstandard2.0\JPS.Domain.Entities.dll
+F:\JCP TC\.net\ProjectTC\JPS\JPS.Domain.Entities\obj\Debug\netstandard2.0\JPS.Domain.Entities.pdb
